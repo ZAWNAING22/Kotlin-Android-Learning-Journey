@@ -1,6 +1,6 @@
 ## 📱 Kotlin & Android Learning Journey
 
-Hi, I'm **Zaw Naing** 👋
+Hi, I'm **ZAW NAING** 
 This repository documents my complete journey learning Kotlin and Android development from scratch to building production-level apps.
 
 ---
@@ -90,4 +90,4 @@ To become a professional Android developer capable of building scalable, modern 
 
 ---
 
-Would you like me to help you draft a specific **README.md** for that **AI Network Monitor** project since it's your final project?
+
