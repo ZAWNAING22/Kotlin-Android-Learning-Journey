@@ -1,4 +1,4 @@
- These are **core OOP concepts in Kotlin**, and they are heavily used in **Android development**. I’ll explain each clearly and then tell you **where and how it is used in Android apps**.
+ These are **core OOP concepts in Kotlin**, and they are heavily used in **Android development**. 
 
 ---
 
@@ -334,21 +334,5 @@ Everything is connected.
 
 ---
 
-# 🎯 What You Should Focus On As Beginner Android Dev
 
-For you (since you're learning Android with Kotlin):
-
-✅ Master:
-
-* Classes & Objects
-* Constructors
-* Inheritance
-* Data classes
-
-⚡ Then learn deeply:
-
-* Interfaces
-* Sealed classes (important for MVVM)
-
----
 
