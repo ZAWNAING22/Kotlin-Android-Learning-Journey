@@ -209,5 +209,3 @@ fun main() {
 
 ---
 
-
-Since you're building Kotlin foundation step-by-step, this is perfect timing to understand null safety deeply next.
