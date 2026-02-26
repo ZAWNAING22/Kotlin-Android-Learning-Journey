@@ -224,6 +224,3 @@ fun addMessage(msg: String) {
 
 ---
 
-
-
-Tell me what you want 💪
