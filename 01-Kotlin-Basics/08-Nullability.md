@@ -179,5 +179,3 @@ This is one reason why Kotlin became official Android language at **Google** and
 
 ---
 
-
-Just tell me 👍
