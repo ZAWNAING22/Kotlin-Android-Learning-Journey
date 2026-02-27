@@ -25,22 +25,36 @@ To become a professional Android developer capable of building scalable, modern 
 ---
 
 ### 📅 Learning Roadmap
+---
 
-#### **Phase 1 – Kotlin Basics** 🟢
+## **Phase 1 – Kotlin Basics** 🟢
 
-* Variables and Data Types
-* Functions
-* Loops and Conditionals
-* Null Safety
-* Collections
+* **Variables and Data Types** – `val` vs `var`, `Int`, `Double`, `String`, `Boolean`
+* **Operators** – Arithmetic, Comparison, Logical, Assignment
+* **Functions** – Normal functions, return types, function overloading
+* **Lambda Functions** – Anonymous functions for concise code
+* **Higher-Order Functions** – Functions as parameters or return values
+* **Extension Functions** – Adding functions to existing classes
+* **Loops and Conditionals** – `for`, `while`, `do-while`, `if`, `when`
+* **Null Safety** – Nullable types (`?`), safe calls (`?.`), Elvis operator (`?:`), non-null assertion (`!!`)
+* **Collections** – Arrays, Lists, Sets, Maps (mutable and immutable)
+* **Console Input/Output** – `print`, `println`, string templates (`$` and `${}`)
+* **Exception Handling** – `try`, `catch`, `finally`, throwing exceptions
 
-#### **Phase 2 – Object-Oriented Programming** 🏛️
+---
 
-* Classes
-* Inheritance
-* Interfaces
-* Data Classes
-* Sealed Classes
+## **Phase 2 – Object-Oriented Programming** 🏛️
+
+* **Classes** – Defining classes, objects
+* **Constructors** – Primary and secondary constructors
+* **Inheritance** – Extending classes and overriding methods
+* **Abstract Classes** – Classes with abstract methods
+* **Interfaces** – Defining contracts for classes
+* **Data Classes** – Classes for holding data with auto-generated functions
+* **Sealed Classes and Sealed Interfaces** – Restricting class hierarchies
+* **Exception Handling in Classes** – Handling errors inside methods (optional but useful)
+
+---
 
 #### **Phase 3 – Android Fundamentals** 📱
 
