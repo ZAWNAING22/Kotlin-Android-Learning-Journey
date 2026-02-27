@@ -248,5 +248,3 @@ Example:
 
 ---
 
-
-Just tell me 👍
