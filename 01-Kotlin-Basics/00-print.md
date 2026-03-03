@@ -242,4 +242,125 @@ textView.text = "Welcome $username"
 ```
 
 ---
+ **Kotlin is case sensitive.**
+
+That means:
+
+```kotlin
+val name = "John"
+val Name = "Mike"
+```
+
+These are **two different variables**.
+
+And:
+
+```kotlin
+fun printName() {}
+fun PrintName() {}
+```
+
+Also **different functions**.
+
+---
+
+# 🔠 Case Rules You Should Know in Kotlin
+
+There are official naming conventions (very important in Android projects 👇).
+
+---
+
+## 1️⃣ Variables & Functions → **camelCase**
+
+Start with lowercase, capitalize next words.
+
+```kotlin
+val userName = "Zaw"
+fun calculateTotalPrice() {}
+```
+
+✔ Correct
+❌ `UserName` (wrong style for variable)
+❌ `calculate_total_price` (not Kotlin style)
+
+---
+
+## 2️⃣ Classes → **PascalCase**
+
+Start with uppercase.
+
+```kotlin
+class UserProfile
+class NetworkMonitorService
+```
+
+✔ Correct
+❌ `userProfile`
+❌ `network_monitor_service`
+
+---
+
+## 3️⃣ Constants → **UPPER_SNAKE_CASE**
+
+Used with `const val`.
+
+```kotlin
+const val MAX_RETRY_COUNT = 3
+```
+
+---
+
+## 4️⃣ Enum Values → **UPPERCASE**
+
+```kotlin
+enum class NetworkState {
+    CONNECTED,
+    DISCONNECTED,
+    UNKNOWN
+}
+```
+
+---
+
+## 5️⃣ Packages → **lowercase only**
+
+```kotlin
+package com.example.networkmonitor
+```
+
+Never use uppercase in package names.
+
+---
+
+# ⚠️ Why This Matters (Especially For You)
+
+Since you're building an Android project with:
+
+* MVVM
+* ViewModel
+* Compose
+* Backend + AI
+
+If you don’t follow naming conventions:
+
+* Your code looks unprofessional
+* Harder to collaborate
+* Harder to read
+* GitHub reviewers will notice
+
+---
+
+# 🧠 Quick Memory Trick
+
+| Type     | Style            |
+| -------- | ---------------- |
+| Variable | camelCase        |
+| Function | camelCase        |
+| Class    | PascalCase       |
+| Constant | UPPER_SNAKE_CASE |
+| Package  | lowercase        |
+
+---
+
+
 
