@@ -1,0 +1,213 @@
+### Inheritance in Kotlin
+
+**Inheritance** means a class can **reuse properties and functions from another class**.
+The class that is inherited from is called the **Parent (or Superclass)**, and the class that inherits it is called the **Child (or Subclass)**.
+
+---
+
+## 1. Basic Syntax
+
+In Kotlin, classes are **final by default**.
+This means you **cannot inherit from a class unless it is marked `open`.**
+
+```kotlin
+open class Animal {
+    fun eat() {
+        println("This animal eats food")
+    }
+}
+
+class Dog : Animal() {
+    fun bark() {
+        println("Dog barks")
+    }
+}
+```
+
+### Usage
+
+```kotlin
+fun main() {
+    val dog = Dog()
+    dog.eat()   // inherited from Animal
+    dog.bark()  // own function
+}
+```
+
+Output:
+
+```
+This animal eats food
+Dog barks
+```
+
+---
+
+# 2. Overriding Functions
+
+If you want a **child class to change the behavior** of a parent function, use **`override`**.
+
+The parent function must be marked **`open`**.
+
+```kotlin
+open class Animal {
+    open fun sound() {
+        println("Animal makes sound")
+    }
+}
+
+class Dog : Animal() {
+    override fun sound() {
+        println("Dog barks")
+    }
+}
+```
+
+Usage:
+
+```kotlin
+fun main() {
+    val dog = Dog()
+    dog.sound()
+}
+```
+
+Output:
+
+```
+Dog barks
+```
+
+---
+
+# 3. Inheriting Constructors
+
+If the parent class has a constructor, the child must pass values to it.
+
+```kotlin
+open class Animal(val name: String)
+
+class Dog(name: String) : Animal(name)
+```
+
+Usage:
+
+```kotlin
+fun main() {
+    val dog = Dog("Buddy")
+    println(dog.name)
+}
+```
+
+Output:
+
+```
+Buddy
+```
+
+---
+
+# 4. Calling Parent Implementation (`super`)
+
+You can call the parent version of a function using **`super`**.
+
+```kotlin
+open class Animal {
+    open fun sound() {
+        println("Animal sound")
+    }
+}
+
+class Dog : Animal() {
+    override fun sound() {
+        super.sound()
+        println("Dog bark")
+    }
+}
+```
+
+Output:
+
+```
+Animal sound
+Dog bark
+```
+
+---
+
+# 5. Kotlin Only Allows Single Class Inheritance
+
+A class can inherit from **only one class**.
+
+❌ Not allowed:
+
+```kotlin
+class Dog : Animal(), Vehicle()  // error
+```
+
+But Kotlin supports **multiple interfaces**.
+
+```kotlin
+interface Walker {
+    fun walk()
+}
+
+interface Runner {
+    fun run()
+}
+
+class Dog : Walker, Runner {
+    override fun walk() {
+        println("Dog walks")
+    }
+
+    override fun run() {
+        println("Dog runs")
+    }
+}
+```
+
+---
+
+# 6. Real Android Example
+
+Inheritance is heavily used in Android.
+
+Example:
+
+```kotlin
+class MainActivity : AppCompatActivity()
+```
+
+Here:
+
+* `MainActivity` → child class
+* `AppCompatActivity` → parent class
+
+Your activity **inherits lifecycle functions** like:
+
+* `onCreate()`
+* `onStart()`
+* `onResume()`
+
+---
+
+# Key Rules to Remember
+
+1️⃣ Classes are **final by default**
+2️⃣ Use **`open`** to allow inheritance
+3️⃣ Use **`override`** to change parent behavior
+4️⃣ Use **`super`** to access parent functions
+5️⃣ Kotlin allows **one class inheritance + multiple interfaces**
+
+---
+
+✅ Since you're learning Kotlin for Android, inheritance is important for:
+
+* Activities
+* ViewModels
+* Custom Views
+* Architecture components
+
+---
+
