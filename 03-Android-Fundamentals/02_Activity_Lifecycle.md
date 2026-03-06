@@ -212,6 +212,10 @@ These prevent:
 * Why lifecycle awareness matters
 
 ---
+![
+Android Activity Lifecycle with Callback Methods & Usage - DataFlair](https://tse4.mm.bing.net/th/id/OIP.bMg2YbZZ9pzVyjLSinHAMAHaI1?rs=1&pid=ImgDetMain&o=7&rm=3)
+
+---
 
 # 🏁 Summary
 
