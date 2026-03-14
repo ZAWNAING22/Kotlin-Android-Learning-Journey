@@ -19,6 +19,7 @@ Android uses **Gradle** to manage libraries.
 ```gradle
 implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//after that click sync now so that it's downloaded
 ```
 
 ### Why?
