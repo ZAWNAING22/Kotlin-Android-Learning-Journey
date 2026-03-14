@@ -43,6 +43,7 @@ APIs usually return **JSON data** like this:
   "name": "John",
   "email": "john@email.com"
 }
+// in andriod studion go to setting->plugins->install (json to kotlin) then make data class in folder
 ```
 
 You create a **Kotlin data class** that matches this structure.
