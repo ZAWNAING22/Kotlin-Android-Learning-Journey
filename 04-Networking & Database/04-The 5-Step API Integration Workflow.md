@@ -21,7 +21,9 @@ implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 //after that click sync now so that it's downloaded
 ```
-
+```
+[ ] Permissions: Did you add <uses-permission android:name="android.permission.INTERNET" /> to your AndroidManifest.xml?
+```
 ### Why?
 
 These libraries help you:
