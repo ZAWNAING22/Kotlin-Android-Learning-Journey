@@ -123,6 +123,8 @@ startActivity(intent)
 
 ```kotlin
 val name = intent.getStringExtra("username")
+val textView = findViewById<TextView>(R.id.txtName)
+textView.text = name   // ✅ show data
 ```
 
 ---
