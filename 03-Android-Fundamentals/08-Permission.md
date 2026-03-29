@@ -145,9 +145,4 @@ requestPermissionLauncher.launch(android.Manifest.permission.CAMERA)
 
 ---
 
-If you want, I can also:
-✅ Give **real app example (camera or location)**
-✅ Show **best practice for portfolio app**
-✅ Explain **common mistakes students make**
 
-Just tell me 👍
