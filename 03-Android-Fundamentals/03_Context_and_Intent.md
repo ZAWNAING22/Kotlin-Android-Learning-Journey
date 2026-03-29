@@ -205,4 +205,3 @@ Understanding these two is required before learning:
 ---
 
 
-(2026 recommendation is Compose, but I’ll follow your choice.)
