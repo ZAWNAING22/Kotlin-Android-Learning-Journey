@@ -1,20 +1,142 @@
-### [cite_start]Homework (SQLite) [cite: 1]
+# 📱 SQLite Contact Manager App
 
-[cite_start]The application will store people's names and phone numbers in an SQLite database[cite: 2]. [cite_start]The SQLite table consists of the following information[cite: 2, 4]:
-* [cite_start]ID (Auto-Incremented) [cite: 3]
-* [cite_start]Name-Surname [cite: 3]
-* [cite_start]Phone Number [cite: 3]
+A simple yet powerful Android application built using **Kotlin** and **SQLite**, designed to manage contacts efficiently. This project demonstrates core Android development concepts such as **CRUD operations, Intents, Permissions, ListView, and SQLite database integration**.
 
-[cite_start]When the application runs, the name and surname details from the SQLite table will be listed in a ListView[cite: 5]. [cite_start]The application will also have an OptionMenu, which will include[cite: 5]:
-* [cite_start]A "New Contact" option to add a new person[cite: 6].
-* [cite_start]An "Exit" option to quit the application[cite: 7].
-* [cite_start]An "Update Contact" option to update the name, surname, and number of the person selected from the ListView[cite: 8].
-* [cite_start]A "Delete Contact" option to delete the details of the person selected from the ListView[cite: 9].
-* [cite_start]A "Call" option to call the person selected from the ListView[cite: 10].
+---
 
-**Functional Requirements:**
-* [cite_start]When the user clicks on "New Contact", a new activity will open, allowing a new user to be added to the system from this activity[cite: 11].
-* [cite_start]When the user clicks on "Exit", the application will be closed[cite: 12].
-* [cite_start]When the user clicks on "Update Contact", an activity will open where changes can be made to the selected record[cite: 13].
-* [cite_start]When the user clicks on "Delete Contact", the selected record will be deleted[cite: 14].
-* [cite_start]When the user clicks on "Call", the selected record will be called after obtaining the necessary permissions[cite: 15].
+## 🚀 Features
+
+✨ **Add New Contact**
+✨ **View Contacts in ListView**
+✨ **Update Existing Contact**
+✨ **Delete Contact**
+✨ **Call Contact (with permission handling)**
+✨ **Exit Application via Menu**
+
+---
+
+## 🗂️ Database Structure
+
+The application uses an SQLite database with the following schema:
+
+| Field Name   | Type    | Description                  |
+| ------------ | ------- | ---------------------------- |
+| ID           | INTEGER | Auto-incremented primary key |
+| Name-Surname | TEXT    | Full name of the person      |
+| Phone Number | TEXT    | Contact number               |
+
+---
+
+## 🧩 Application Workflow
+
+```mermaid
+flowchart TD
+    A[App Launch 🚀] --> B[Load Contacts from SQLite]
+    B --> C[ListView Display 📋]
+
+    C --> D{Option Menu ☰}
+
+    D --> E[➕ New Contact]
+    D --> F[✏️ Update Contact]
+    D --> G[🗑️ Delete Contact]
+    D --> H[📞 Call Contact]
+    D --> I[❌ Exit App]
+
+    E --> J[Open Add Activity]
+    J --> B
+
+    F --> K[Select Contact]
+    K --> L[Open Update Activity]
+    L --> B
+
+    G --> M[Delete Selected Contact]
+    M --> B
+
+    H --> N[Request Permission]
+    N --> O[Call Contact]
+
+    I --> P[Close Application]
+```
+
+---
+
+## 📌 Functional Requirements
+
+### ➕ New Contact
+
+* Opens a new activity
+* User can input:
+
+  * Name-Surname
+  * Phone Number
+* Data is stored in SQLite database
+
+---
+
+### ✏️ Update Contact
+
+* User selects a contact from **ListView**
+* Opens update activity
+* Allows modification of:
+
+  * Name-Surname
+  * Phone Number
+* Updates record in database
+
+---
+
+### 🗑️ Delete Contact
+
+* Deletes selected contact from the database
+* List updates automatically
+
+---
+
+### 📞 Call Contact
+
+* Requests runtime permission (**CALL_PHONE**)
+* Initiates call to selected contact
+
+---
+
+### ❌ Exit
+
+* Closes the application safely
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Kotlin 🧑‍💻
+* **Database:** SQLite 🗄️
+* **UI:** XML + ListView 🎨
+* **Concepts Used:**
+
+  * Intents
+  * Runtime Permissions
+  * SQLiteOpenHelper
+  * CRUD Operations
+
+---
+
+## 📷 Screens (Optional)
+
+> *(Add screenshots here if you want 👇)*
+
+```
+Main Screen | Add Contact | Update Contact
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+This project helps you understand:
+
+* How to integrate **SQLite database** in Android
+* Performing **CRUD operations**
+* Managing **activities and intents**
+* Handling **user permissions**
+* Building a complete **real-world mini application**
+
+---
