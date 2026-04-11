@@ -148,7 +148,7 @@ override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 ```
 
 ---
-
+#### 🔑 Shortcut ->Ctrl + O → Opens the Override Methods dialog.
 ### 3. Handle Clicks
 
 ```kotlin
