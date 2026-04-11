@@ -98,7 +98,44 @@ You mentioned:
         android:title="Exit" />
 </menu>
 ```
+---
 
+```xml
+<!-- App bar container -->
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <!-- Toolbar inside AppBarLayout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+</com.google.android.material.appbar.AppBarLayout>
+```
+
+---
+
+### 📝 Key Notes
+- **`AppBarLayout`** → parent container, gives Material Design scrolling/elevation behavior.
+- **`Toolbar`** → actual action bar widget, flexible placement.
+- Use **`match_parent` width** so it spans the screen.
+- Use **`?attr/actionBarSize`** for height → automatically adapts to system-defined action bar size.
+- `android:theme` and `app:popupTheme` let you control colors for the toolbar and its overflow menu.
+
+---
+
+### ⚡ Typical usage in Activity
+```kotlin
+val toolBar = findViewById<Toolbar>(R.id.toolbar)
+setSupportActionBar(toolBar)
+supportActionBar?.title = "My App"
+```
+
+This way, your toolbar behaves like a proper ActionBar and integrates with menus, navigation, and Material Design patterns.
 ---
 
 ### 2. Show Menu in Activity
