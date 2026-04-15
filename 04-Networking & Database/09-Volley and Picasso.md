@@ -134,6 +134,50 @@ Picasso.get()
 | Use Case  | API communication | UI image display |
 
 ---
+When comparing **Volley** and **Picasso**, it's important to realize they serve slightly different primary purposes, though they overlap in image handling.
+
+### **The Comparison**
+
+| Feature | **Volley** (by Google) | **Picasso** (by Square) |
+| :--- | :--- | :--- |
+| **Primary Use** | General networking (JSON, Strings, custom APIs). | Dedicated image loading and processing. |
+| **Image Loading** | Basic (`NetworkImageView`). Good for small, frequent requests. | Highly optimized. Handles complex resizing, cropping, and caching. |
+| **Caching** | Excellent HTTP response caching (Disk/Memory). | Superior image-specific memory and disk caching. |
+| **Best For** | REST API calls and simple data fetching. | High-performance image galleries or heavy UI apps. |
+
+---
+
+### **The Dependencies (2026)**
+
+To use these in your Android project, add these lines to your `build.gradle` (Module: app) file.
+
+#### **1. Volley Dependency**
+Google’s library for networking tasks.
+```gradle
+dependencies {
+    implementation 'com.android.volley:volley:1.2.1'
+}
+```
+
+#### **2. Picasso Dependency**
+Square’s library for handling image loading.
+```gradle
+dependencies {
+    implementation 'com.squareup.picasso:picasso:2.8'
+}
+```
+
+---
+
+### **Implementation Tips**
+
+* **Don't forget the Manifest:** Both libraries require internet access. Ensure you have this in your `AndroidManifest.xml`:
+    ```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    ```
+* **The "Hybrid" Approach:** Many developers use **Volley** for their data/JSON requests and **Picasso** specifically for images. They play very nicely together.
+* **A Modern Alternative:** While both are reliable "legacy" giants, if you are starting a brand new Kotlin-first project, you might also want to look into **Retrofit** (for networking) and **Coil** (for images), as they are currently considered the modern industry standard.
+---
 
 # 🧠 Real App Example
 
