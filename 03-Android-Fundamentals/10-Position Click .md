@@ -39,6 +39,11 @@ holder.itemView.setOnClickListener {
     val position = adapterPosition
     println("Clicked position: $position")
 }
+//Alternative syntax
+listView.setOnItemClickListener { _, _, position, _ ->
+    println("Clicked item: $position")
+}
+
 ```
 
 👉 Here:
