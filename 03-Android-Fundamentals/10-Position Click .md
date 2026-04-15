@@ -15,6 +15,11 @@ This can mean **2 slightly different things**:
 listView.setOnItemClickListener { parent, view, position, id ->
     println("Clicked item position: $position")
 }
+//Alternative syntax
+listView.setOnItemClickListener { _, _, position, _ ->
+    println("Clicked item: $position")
+}
+
 ```
 
 ### 🔍 What is `position`?
@@ -38,10 +43,6 @@ Click C → position = 2
 holder.itemView.setOnClickListener {
     val position = adapterPosition
     println("Clicked position: $position")
-}
-//Alternative syntax
-listView.setOnItemClickListener { _, _, position, _ ->
-    println("Clicked item: $position")
 }
 
 ```
