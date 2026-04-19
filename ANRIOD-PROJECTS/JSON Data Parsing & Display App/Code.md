@@ -73,7 +73,7 @@ package com.example.jsonapp
 
 data class Teacher(
     val name: String,
-    val courses: ArrayList<Course>
+    val id: Int
 )
 ```
 
@@ -85,7 +85,8 @@ package com.example.jsonapp
 data class Course(
     val code: String,
     val name: String,
-    val credit: String
+    val teacherId: Int,
+    val credit: Int
 )
 ```
 
@@ -128,7 +129,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import org.json.JSONArray
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
@@ -138,8 +138,10 @@ class MainActivity : AppCompatActivity() {
 
     val teacherList = ArrayList<Teacher>()
     val teacherNames = ArrayList<String>()
+
+    val allCourses = ArrayList<Course>()
+    val filteredCourses = ArrayList<Course>()
     val courseNames = ArrayList<String>()
-    val selectedCourses = ArrayList<Course>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -159,14 +161,15 @@ class MainActivity : AppCompatActivity() {
         val queue = Volley.newRequestQueue(this)
 
         val request = StringRequest(
-            Request.Method.GET, url,
+            Request.Method.GET,
+            url,
 
             { response ->
                 parseJson(response)
             },
 
             {
-                Toast.makeText(this, "Error loading data", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Error loading JSON", Toast.LENGTH_SHORT).show()
             }
         )
 
@@ -175,31 +178,36 @@ class MainActivity : AppCompatActivity() {
 
     private fun parseJson(response: String) {
 
-        val jsonArray = JSONArray(response)
+        val jsonObject = JSONObject(response)
 
-        for (i in 0 until jsonArray.length()) {
+        val teachersArray = jsonObject.getJSONArray("Teachers")
+        val coursesArray = jsonObject.getJSONArray("Courses")
 
-            val teacherObj = jsonArray.getJSONObject(i)
+        // Teachers
+        for (i in 0 until teachersArray.length()) {
 
-            val teacherName = teacherObj.getString("teacher")
+            val obj = teachersArray.getJSONObject(i)
 
-            val courseArray = teacherObj.getJSONArray("courses")
+            val name = obj.getString("name")
+            val id = obj.getInt("id")
 
-            val courses = ArrayList<Course>()
+            teacherList.add(Teacher(name, id))
+            teacherNames.add(name)
+        }
 
-            for (j in 0 until courseArray.length()) {
+        // Courses
+        for (i in 0 until coursesArray.length()) {
 
-                val courseObj = courseArray.getJSONObject(j)
+            val obj = coursesArray.getJSONObject(i)
 
-                val code = courseObj.getString("code")
-                val name = courseObj.getString("name")
-                val credit = courseObj.getString("credit")
+            val code = obj.getString("code")
+            val name = obj.getString("name")
+            val teacherId = obj.getInt("teacherId")
+            val credit = obj.getInt("credit")
 
-                courses.add(Course(code, name, credit))
-            }
-
-            teacherList.add(Teacher(teacherName, courses))
-            teacherNames.add(teacherName)
+            allCourses.add(
+                Course(code, name, teacherId, credit)
+            )
         }
 
         loadSpinner()
@@ -224,23 +232,25 @@ class MainActivity : AppCompatActivity() {
                     position: Int,
                     id: Long
                 ) {
-                    showCourses(position)
+                    val selectedTeacherId = teacherList[position].id
+                    showCourses(selectedTeacherId)
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {}
             }
     }
 
-    private fun showCourses(position: Int) {
+    private fun showCourses(teacherId: Int) {
 
+        filteredCourses.clear()
         courseNames.clear()
-        selectedCourses.clear()
 
-        val courses = teacherList[position].courses
+        for (course in allCourses) {
 
-        for (course in courses) {
-            courseNames.add(course.name)
-            selectedCourses.add(course)
+            if (course.teacherId == teacherId) {
+                filteredCourses.add(course)
+                courseNames.add(course.name)
+            }
         }
 
         val adapter = ArrayAdapter(
@@ -251,9 +261,9 @@ class MainActivity : AppCompatActivity() {
 
         listView.adapter = adapter
 
-        listView.setOnItemClickListener { _, _, pos, _ ->
+        listView.setOnItemClickListener { _, _, position, _ ->
 
-            val c = selectedCourses[pos]
+            val c = filteredCourses[position]
 
             Toast.makeText(
                 this,
