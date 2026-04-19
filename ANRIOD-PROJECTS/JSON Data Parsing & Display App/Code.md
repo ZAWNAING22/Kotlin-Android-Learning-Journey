@@ -321,23 +321,4 @@ Credit: 4
 
 ---
 
-# 🔥 If JSON Format Different?
 
-Send me the real JSON file and I’ll customize instantly.
-
----
-
-# ⭐ Next Upgrade Options
-
-I can also improve this to:
-
-### 🔥 Modern Version
-
-✅ RecyclerView
-✅ CardView UI
-✅ Retrofit
-✅ Glide
-✅ Search Filter
-✅ MVVM Architecture
-
-Just say **"upgrade this project"** 👍
