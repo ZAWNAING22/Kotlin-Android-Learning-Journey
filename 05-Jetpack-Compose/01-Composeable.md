@@ -310,3 +310,316 @@ Column {
 
 ---
 
+In Jetpack Compose, **Column / Row / Layout composables** have parameters that control:
+
+✅ Size
+✅ Position
+✅ Alignment
+✅ Spacing
+✅ Child arrangement
+✅ Styling through `Modifier`
+
+These parameters are very important because layout = how UI items are placed.
+
+---
+
+# 📌 1. Column Parameters
+
+```kotlin id="jlwmqv"
+Column(
+    modifier = Modifier,
+    verticalArrangement = Arrangement.Top,
+    horizontalAlignment = Alignment.Start
+) {
+   // children
+}
+```
+
+---
+
+## 🔹 A. modifier
+
+Most used parameter.
+
+Used for:
+
+* padding
+* size
+* width/height
+* background
+* click
+* border
+
+```kotlin id="3rw5sl"
+Column(
+    modifier = Modifier
+        .fillMaxSize()
+        .padding(16.dp)
+)
+```
+
+### Meaning:
+
+* take full screen
+* padding 16dp
+
+---
+
+## 🔹 B. verticalArrangement
+
+Controls how children are arranged **top to bottom** inside Column.
+
+```kotlin id="otk0zv"
+Column(
+    verticalArrangement = Arrangement.Center
+)
+```
+
+Options:
+
+| Value        | Meaning                 |
+| ------------ | ----------------------- |
+| Top          | Start from top          |
+| Center       | Center vertically       |
+| Bottom       | Bottom                  |
+| SpaceBetween | Equal gap between items |
+| SpaceAround  | Space around each item  |
+| SpaceEvenly  | Equal everywhere        |
+
+
+
+![Image](https://images.openai.com/static-rsc-4/ho9j9reO83g-cPtoxxVjlJ4LDGZ-wBsSn4qIcFwUYMdHjDXky6QfYQXAcMWFc5_gH97qLkRH_LRH5aZ3-sZ56JcAjgKVXjnJ5j5gDWV8vlCPswFlY3ku4nAxmVov4pTtXKBX5fKB2k41prbILhwMu0BzTxeTqAPBCehbeLBqTYSDei4A5P2HHRWIRZFTrUFt?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/orYXVFbi6NhUChmEwOvuP2IdMmc00yZyPRZHM5qZ2ltDR2iICN55oh0uV2mdA-ZmwoJAj7_a3ef_i6jN5gVaG8f_C4j6iaNUVb_yMlx8HcPTY39S0lB-OqnJNsCKAj6nr3Z5AQut1hAuvJH6vOwHWJfOC7QPeiulAi5BbJAbgQpoXR_pl7CnDBkrgDY4qxfE?purpose=fullsize)
+
+---
+
+## 🔹 C. horizontalAlignment
+
+Controls left/right alignment of children.
+
+```kotlin id="jl89se"
+Column(
+    horizontalAlignment = Alignment.CenterHorizontally
+)
+```
+
+Options:
+
+| Value              | Meaning |
+| ------------------ | ------- |
+| Start              | Left    |
+| CenterHorizontally | Center  |
+| End                | Right   |
+
+---
+
+# 📌 2. Row Parameters
+
+```kotlin id="1r2q2g"
+Row(
+    modifier = Modifier,
+    horizontalArrangement = Arrangement.Start,
+    verticalAlignment = Alignment.Top
+) {
+}
+```
+
+---
+
+## 🔹 A. horizontalArrangement
+
+Controls left → right item placement.
+
+```kotlin id="dg6j8r"
+Row(
+    horizontalArrangement = Arrangement.SpaceEvenly
+)
+```
+
+Options same as Column arrangement.
+
+---
+
+## 🔹 B. verticalAlignment
+
+Controls top/bottom alignment inside Row.
+
+```kotlin id="g0yjj5"
+Row(
+    verticalAlignment = Alignment.CenterVertically
+)
+```
+
+Options:
+
+| Value            | Meaning |
+| ---------------- | ------- |
+| Top              | Top     |
+| CenterVertically | Middle  |
+| Bottom           | Bottom  |
+
+---
+
+# 📌 3. Box Parameters
+
+```kotlin id="w9u6zl"
+Box(
+    modifier = Modifier,
+    contentAlignment = Alignment.Center
+)
+```
+
+### contentAlignment
+
+Controls child position inside Box.
+
+Examples:
+
+| Value     | Meaning      |
+| --------- | ------------ |
+| Center    | Middle       |
+| TopStart  | Top left     |
+| BottomEnd | Bottom right |
+
+![Image](https://images.openai.com/static-rsc-4/ldNB9pIkeykB_1MTqeenEpGdr0lMbpi1hjet4XnaJjJ3bESTyvbeyOmy6CosdwdtyXIlJuETas5izw5vTP7b6edERqoneF4uGvxHd5Q_g2WHVppCV2C-a41SPw9KF8x-LUBo5-zygITMiWReU9Ig_1JngdljEXLqY8y1Cf_DhhTR1n60L-njFBtuv-TsHO1a?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/K9GjxwwcVpkNNKjWsM_ArK80sEiFLiNSK-YEHca4mR49WqNobDU347f3-UFB6aOdVTgm0ciJFLwi2QS0MT3T37AuRPOmyim3WmMfQxM4nElDzlFXaOcJPh0dYbn9CCYqiSwtpASwft-nLtsYcUOofKd5YhA1KOp5fzhKn2HMP40tEicASQoFnERAz4fB0y6F?purpose=fullsize)
+
+
+---
+
+# 📌 4. Important Modifier Parameters Inside Layout
+
+---
+
+## fillMaxSize()
+
+Take full available space.
+
+```kotlin id="xgd5dh"
+Modifier.fillMaxSize()
+```
+
+---
+
+## fillMaxWidth()
+
+Take full width only.
+
+```kotlin id="4k65zr"
+Modifier.fillMaxWidth()
+```
+
+---
+
+## weight()
+
+Share space equally.
+
+```kotlin id="gklxyd"
+Row {
+   Text("A", Modifier.weight(1f))
+   Text("B", Modifier.weight(1f))
+}
+```
+
+Both take equal width.
+
+---
+
+## padding()
+
+Space inside outer border.
+
+```kotlin id="i3d8i8"
+Modifier.padding(16.dp)
+```
+
+---
+
+## size()
+
+Exact size.
+
+```kotlin id="i27s95"
+Modifier.size(100.dp)
+```
+
+---
+
+# 📌 5. Full Example
+
+```kotlin id="eg2h7j"
+Column(
+    modifier = Modifier.fillMaxSize(),
+    verticalArrangement = Arrangement.Center,
+    horizontalAlignment = Alignment.CenterHorizontally
+) {
+
+    Row(
+        horizontalArrangement = Arrangement.SpaceEvenly,
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Button(onClick = {}) { Text("Yes") }
+        Button(onClick = {}) { Text("No") }
+    }
+}
+```
+
+---
+
+# 📌 6. Easy Memory Trick
+
+## Column
+
+* verticalArrangement ⬆⬇
+* horizontalAlignment ⬅➡
+
+## Row
+
+* horizontalArrangement ⬅➡
+* verticalAlignment ⬆⬇
+
+---
+
+# 📌 7. Real Life Meaning
+
+Think Column = people standing in line vertically.
+
+Need:
+
+* where line starts?
+* gap between people?
+* centered or left?
+
+Think Row = people sitting in row horizontally.
+
+---
+
+# 📌 8. Most Used In Real Apps
+
+```kotlin id="38y6or"
+Column(
+  modifier = Modifier.fillMaxSize().padding(16.dp),
+  verticalArrangement = Arrangement.Top
+)
+```
+
+```kotlin id="o1m6f5"
+Row(
+  modifier = Modifier.fillMaxWidth(),
+  horizontalArrangement = Arrangement.SpaceBetween
+)
+```
+
+---
+
+# 📌 9. One Line Summary
+
+**Arrangement = spacing direction**
+**Alignment = opposite direction positioning**
+**Modifier = size/style/behavior**
+
+---
+
