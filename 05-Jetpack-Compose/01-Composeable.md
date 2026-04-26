@@ -467,6 +467,10 @@ Options:
 Box(
     modifier = Modifier,
     contentAlignment = Alignment.Center
+      { Text("one")
+       Text("two", modifier = Modifier.align(Alignment.BottomCenter))
+        Text("three",modifier = Modifier.align(Alignment.BottomStart))
+    }
 )
 ```
 
