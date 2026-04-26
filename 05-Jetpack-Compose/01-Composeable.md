@@ -211,6 +211,18 @@ LazyColumn {
         Text("Item $it")
     }
 }
+// or
+LazyColumn(
+    modifier = Modifier.fillMaxSize(),
+    verticalArrangement = Arrangement.Top,
+    horizontalAlignment = Alignment.Start,
+    contentPadding = PaddingValues(8.dp)
+) {
+    items(100) { index ->
+        Text("Item $index")
+    }
+}
+
 ```
 # 🔷 LazyCRow
 
@@ -228,6 +240,21 @@ Scrollable vertical list.
 
         }
 ```
+---
+Parameters:
+
+modifier → Same as Column/Row.
+
+verticalArrangement / horizontalArrangement → Same idea as Column/Row.
+
+horizontalAlignment / verticalAlignment → Same idea as Column/Row.
+
+contentPadding → Extra padding around the scrollable content.
+
+items(count) → Defines list items dynamically.
+
+item { } → For a single composable item.
+---
 Used for RecyclerView replacement.
 
 ---
