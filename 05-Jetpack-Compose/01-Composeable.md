@@ -390,8 +390,6 @@ Options:
 
 ![Image](https://images.openai.com/static-rsc-4/ho9j9reO83g-cPtoxxVjlJ4LDGZ-wBsSn4qIcFwUYMdHjDXky6QfYQXAcMWFc5_gH97qLkRH_LRH5aZ3-sZ56JcAjgKVXjnJ5j5gDWV8vlCPswFlY3ku4nAxmVov4pTtXKBX5fKB2k41prbILhwMu0BzTxeTqAPBCehbeLBqTYSDei4A5P2HHRWIRZFTrUFt?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/orYXVFbi6NhUChmEwOvuP2IdMmc00yZyPRZHM5qZ2ltDR2iICN55oh0uV2mdA-ZmwoJAj7_a3ef_i6jN5gVaG8f_C4j6iaNUVb_yMlx8HcPTY39S0lB-OqnJNsCKAj6nr3Z5AQut1hAuvJH6vOwHWJfOC7QPeiulAi5BbJAbgQpoXR_pl7CnDBkrgDY4qxfE?purpose=fullsize)
-
 ---
 
 ## 🔹 C. horizontalAlignment
@@ -485,8 +483,6 @@ Examples:
 | Center    | Middle       |
 | TopStart  | Top left     |
 | BottomEnd | Bottom right |
-
-![Image](https://images.openai.com/static-rsc-4/ldNB9pIkeykB_1MTqeenEpGdr0lMbpi1hjet4XnaJjJ3bESTyvbeyOmy6CosdwdtyXIlJuETas5izw5vTP7b6edERqoneF4uGvxHd5Q_g2WHVppCV2C-a41SPw9KF8x-LUBo5-zygITMiWReU9Ig_1JngdljEXLqY8y1Cf_DhhTR1n60L-njFBtuv-TsHO1a?purpose=fullsize)
 
 ![Image](https://images.openai.com/static-rsc-4/K9GjxwwcVpkNNKjWsM_ArK80sEiFLiNSK-YEHca4mR49WqNobDU347f3-UFB6aOdVTgm0ciJFLwi2QS0MT3T37AuRPOmyim3WmMfQxM4nElDzlFXaOcJPh0dYbn9CCYqiSwtpASwft-nLtsYcUOofKd5YhA1KOp5fzhKn2HMP40tEicASQoFnERAz4fB0y6F?purpose=fullsize)
 
