@@ -212,7 +212,22 @@ LazyColumn {
     }
 }
 ```
+# 🔷 LazyCRow
 
+Scrollable vertical list.
+
+```kotlin
+ LazyRow(modifier = Modifier.fillMaxSize()) {
+            items(100) {
+            Icon(
+                imageVector = Icons.Default.Edit,
+                contentDescription = null,
+                modifier = Modifier.size(30.dp)
+            )
+
+
+        }
+```
 Used for RecyclerView replacement.
 
 ---
