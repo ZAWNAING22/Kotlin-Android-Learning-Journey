@@ -51,12 +51,7 @@ flowchart TD
 ---
 
 ## 📱 Example UI Preview
-
-![Image](https://images.openai.com/static-rsc-4/94Od0yzov7cf6fX4cbNrXNpsVgSyggWjPICOrcMt-5xsgxuFKtEI27wy85cGQJHQEKQbXANSroqHT6B2rmmXQ_TOaIaocfHjZzECgros01bxJD8lLewNx1zep_vuzr7vT_KRsM4iueLyR59FZJedMt1b7dvNMTj0S9PfITLrR8kpB_01_3nUXvRJi3JI2bk5?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/jjzHl-YBCTRmIy6GBu6Syg5Zgq82OFuNSWxqhTxu3CHoE_B60xPGl_TXU4eMvZHAk5XoJAwvdm4ediZ3gwAiaAPZifeF2Xm7r5mYlOy_PtdE9w1d8pir1hVSK35S5ud4zFqmlRYhABI82ki0Iwy5OTs3joo1c6xzI4yB8P8j8J5o1nE-aJUrnkKXp97lm2EJ?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/jTE8EYQXTLe2i2MY68TYOKJLG8_evvilAHBpSb3jBJ_jf_TKo-GuYGGhLdDJ3-gl_gBssCAzPm7QegpIIwNDbaOnYiAYTd8izSY2yjCRUYLis43JdlEQYQ-QZ-QRzYBG3NM0YhZCick8MQsmo1pXyd-3qVTHjPYjOqXIkraoEwC2JVlMjHWBXdGgYHH5jkPl?purpose=fullsize)
+[photo]
 
 ---
 
