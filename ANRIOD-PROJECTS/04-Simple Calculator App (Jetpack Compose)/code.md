@@ -187,13 +187,6 @@ fun CalculatorApp() {
 
 # 📱 UI Preview
 
-![Image](https://images.openai.com/static-rsc-4/p6v28AOAcXBFhulPDeQDm97Jpz6HGkClzUDhEZvwObzZBl9vBlTQGw7WFksmnXsYSr58szINKBBL7yZD9htyCGw4grSZI2t9ML_8teG2RIKzr1evL4mCLD3GPA9clVKe2F6PN__Pg6LmOnfqkdEzIHGL-JD2ax02W62nH8y6Xq63TfqidBDjq2VBNrAO_CuZ?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/yWCtIjaXT8xRQt0sWue-LewG8RPJikGxM_lKmlXrpnnugJiiXy_EEkoIxRNHJcfiSlO1T-aCEVn8QgDrlB94hrgD85wNA5d-VmcotOPRbC-QVxNqMvu9giSHDKpaMa4eq1DWrSwd_qKhjBzcwTuET7r-ZCHNH0e2u7m3-rXJ_reakNX4z0-0rkK5SnPJjM7Q?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/-XGjCznzPlwyBIi8z-YN8mbQHnS9XUN1G8y0ezzWNw21RBoVs8524FHvuZxAo2QP9smvlbs_TwhqZ6ro0buTaAx8GlBUTYTwo6vmD4ee_1lSEz8HqMkj84xEJJskkmWwqgdfECKgCPKmEnqDp4KcW6Vtq7vV2uJizWTfWp3taXIqV4M7nK5lFOX1XOuuDjMd?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/3EhKkakQWnKaYMb2R_AZByRj1AGvkPuX2OAtX0bmqVCNsKZTjc4xpguA3iqhGI-ySz86DFatdJZgxg20xfgrpmlyLr2ZyOaE9NsymuqzfTN5qV9HeROyUveYyM6bk16Hpm-LEvo98DBNjndxPfOG_5fZuoqLry7Ma1hor1EyAL5LglxJ6khL2bcdnRmAlkZ8?purpose=fullsize)
 
 ---
 
