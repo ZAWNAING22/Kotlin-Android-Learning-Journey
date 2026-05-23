@@ -240,12 +240,19 @@ fun CountryCard(country: Country) {
         }
     }
 }
+@Preview(showBackground = true)
+@Composable
+fun CountryListPreview() {
+    CountryListApp()
+}
+
 ```
 
 ---
 
 # 📱 UI Preview
 
+<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/df91a496-cb7f-4ced-ba46-8ae5d726e402" />
 
 ---
 
