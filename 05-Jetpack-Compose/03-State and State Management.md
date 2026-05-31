@@ -61,7 +61,7 @@ fun Counter() {
 * `remember {}` → keeps value during recomposition
 * when `count++`
 * UI updates automatically
-*
+```kotlin
 *  // Integer state
 var counter by remember { mutableStateOf(0) }
 
@@ -78,7 +78,7 @@ var items by remember { mutableStateOf(listOf("A", "B", "C")) }
 data class User(val id: Int, val username: String)
 var currentUser by remember { mutableStateOf(User(1, "ZawNaing")) }
 
-
+```
 ---
 
 # 🔹 State Flow in Compose
