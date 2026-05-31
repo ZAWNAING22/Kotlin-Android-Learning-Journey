@@ -189,11 +189,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun UserProfileScreen(
-    navController: NavController,
-    name: String,
-    company: String
-) {
+fun UserProfileScreen( navController: NavController,name: String,company: String) {
 
     Column(
         modifier = Modifier
