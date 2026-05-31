@@ -260,13 +260,7 @@ fun UserProfileScreen(
 
 # 📱 UI Preview
 
-![Image](https://images.openai.com/static-rsc-4/p9prIgA2lKZu01GIGAmmbSXNTopntAHnfxInfaz2kjJdn8P28S3VrKqdM-mAngkHTq4JvlhVnm54QswZcWmc2ajSuicMtwvBb7i4Fgmm2qJwom3CWA_hOTqAEgAJpI7tpN3GLKk5FNjiAFgkxosG4B3vBFZOFOBkLN_z6lefk9FzOpkQhK6MeBJS94-A1JDv?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/TLzO5KmEKN5XQrMVHmNpk2ObEvQeH5nAubV5S0cJvvZbZJ5zmk9IKv06SPxmZM_-6ntAU8JKc6hInO809GnM9LE8EwmtGZCQ53B2Xd5vlyjh6kmzZH0xs_4Klfp1SlCZ8QnYJpigTsYrYJBUniGdcx85lcH6HQIN3TBsxA2gjGhGu7jKJRFzvdjRkqpVCKpO?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/U4tV27_rLJM5XUpSjVs38l4HWiDKakHlL_4bg5YgiqSDZ2fI6JrhXlIHZ8ijeWnby4jHzBmJIx0wuPtC6hDkplFGfCaidN11_rl8OT4AKkz-ApbR0HntfJCpBHIjd0uI0r4k-BUO57XQkEeg77RlSypSLL-kdvbIQ41TlrgJv5Wi7x9JtXk3u1EvafFU1Jeu?purpose=fullsize)
-
-![Image](https://images.openai.com/static-rsc-4/zOLNVcMTbSBAr6iC_cVIHjAPEFLF9haUr2KDhaC91k2GG8Ee1RkEV8r0T1XrdTthXXBEKN2BbjXkE5_O6s9kJrzvWq1rgnuUW0KXpT3INXeieeN9fKibD-fofsKySucO2BABS0OO8dfDFYwRQcIohc43GxBtXK2Qq3RtDJB4A5kUeLgLh7jC3P_rmH_gSXCj?purpose=fullsize)
 
 ---
 
