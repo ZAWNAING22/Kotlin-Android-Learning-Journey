@@ -71,21 +71,12 @@ class MainActivity : ComponentActivity() {
                     LoginScreen(navController)
                 }
 
-                composable(
-                    "profile/{name}/{company}"
-                ) { backStackEntry ->
+                composable( "profile/{name}/{company}" )
+                 { backStackEntry ->
+             val name = backStackEntry.arguments?.getString("name") ?: ""
+             val company = backStackEntry.arguments?.getString("company") ?: ""
 
-                    val name =
-                        backStackEntry.arguments?.getString("name") ?: ""
-
-                    val company =
-                        backStackEntry.arguments?.getString("company") ?: ""
-
-                    UserProfileScreen(
-                        navController,
-                        name,
-                        company
-                    )
+                    UserProfileScreen(navController,name,company )
                 }
             }
         }
@@ -165,9 +156,7 @@ fun LoginScreen(navController: NavController) {
         Button(
             onClick = {
 
-                navController.navigate(
-                    "profile/$name/$company"
-                )
+                navController.navigate( "profile/$name/$company")
             },
 
             modifier = Modifier.fillMaxWidth()
