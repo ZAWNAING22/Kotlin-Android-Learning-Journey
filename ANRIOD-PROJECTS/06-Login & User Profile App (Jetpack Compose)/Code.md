@@ -71,8 +71,7 @@ class MainActivity : ComponentActivity() {
                     LoginScreen(navController)
                 }
 
-                composable( "profile/{name}/{company}" )
-                 { backStackEntry ->
+                composable( "profile/{name}/{company}" ){  backStackEntry ->
              val name = backStackEntry.arguments?.getString("name") ?: ""
              val company = backStackEntry.arguments?.getString("company") ?: ""
 
