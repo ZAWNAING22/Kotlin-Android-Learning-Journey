@@ -61,6 +61,23 @@ fun Counter() {
 * `remember {}` → keeps value during recomposition
 * when `count++`
 * UI updates automatically
+*
+*  // Integer state
+var counter by remember { mutableStateOf(0) }
+
+// String state
+var name by remember { mutableStateOf("Alice") }
+
+// Boolean state
+var isVisible by remember { mutableStateOf(true) }
+
+// List state
+var items by remember { mutableStateOf(listOf("A", "B", "C")) }
+
+// Data class state
+data class User(val id: Int, val username: String)
+var currentUser by remember { mutableStateOf(User(1, "ZawNaing")) }
+
 
 ---
 
