@@ -146,11 +146,8 @@ fun ProfileScreen(navController: NavController) {
 
 # Flow Visualization
 
-![Image](https://images.openai.com/static-rsc-4/njoP4l8tXlFYPgtjqh4LugnKp0pIrOSy63qpVUC3mDSXYyVi8cl1P1OCZfIZpxbJk6lc8DFBQbhj7qFvKYyR4IyhtTIVuzHan8UrSA0NTD2URyb16UYJczYvndwzcB1pWWbPsJDV2BvC-xHdylBq6HwNXWG2uXDrVCLCksrl-kkKk8em79HBF8cd7kV29ibs?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/rKK4Fn9Gzs9fB4kQkZ7X3RRdl0k6bEC5hm6czI86j3Kxyghew7SXfXA-jUuCJMjODomalm0HYfCV50fEozI-IPpDD3qhx0_XGRmOa-sYWWiHPZl93W32DD_Hww_qdgmdrweTAoT94hBlJbvrJ045yGTHY-NiPuAxy0pTtld0biZjDcAFm3zmrhmFQ1UAKgRI?purpose=fullsize)
 
-![Image](https://images.openai.com/static-rsc-4/ow5mZWWtQ7yeFFau3ExaKEWdGyqTxfyZUD1Dlkc9K7WazZx3W6ipq-x4ZF5Eo0rpeyNcZ_j1x6gda8YMGlJuU-yB0Zp2GHAIYtozCs-4T8NxXujiUjexqKYIB3ht7nNavVgtrhUFqoLGbHIeok_lqH_X4tvoEsQb8wLrWPUFwio1B_CKjyfLsgJ31jAwEXk2?purpose=fullsize)
 
 ---
 
